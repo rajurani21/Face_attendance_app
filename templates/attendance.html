@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Records</title>
+</head>
+<body>
+    <h2>Attendance Records</h2>
+    {% for record in records %}
+        <h4>Date: {{ record.date }}</h4>
+        <ul>
+        {% for entry in record.data %}
+            <li>{{ entry[0] }} - {{ entry[1] }}</li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>
