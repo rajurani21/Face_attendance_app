@@ -1,0 +1,13 @@
+{
+  "build": {
+    "env": {
+      "PYTHON_VERSION": "3.8"
+    }
+  },
+  "deploy": {
+    "startCommand": "python app.py"
+  },
+  "env": {
+    "SECRET_KEY": "your_secret_here"
+  }
+}
