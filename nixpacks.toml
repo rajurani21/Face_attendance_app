@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["cmake", "gcc", "python3", "python3Packages.pip", "python3Packages.setuptools", "python3Packages.wheel"]
+
+[phases.install]
+cmds = ["pip install --upgrade pip", "pip install -r requirements.txt"]
+
+[phases.start]
+cmd = "python app.py"
