@@ -19,7 +19,7 @@ ADMIN_PASSWORD = "admin123"
 known_face_encodings = []
 known_face_names = []
 
-photos_dir = '"C:\Users\ganta\OneDrive\Desktop\Face_attendance_app\students\gr.jpeg"'
+photos_dir ="students"
 for filename in os.listdir(photos_dir):
     if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
         path = os.path.join(photos_dir, filename)
