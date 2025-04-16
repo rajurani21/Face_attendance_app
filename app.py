@@ -6,8 +6,10 @@ import os
 from datetime import datetime
 import csv
 
+import secrets
+secret_key = secrets.token_hex(24)  # Generates a 48-character hex string
+print(secret_key)
 app = Flask(__name__)
-app.secret_key = s3cr3t!Key@12345  # Change this to a random string in real app
 
 # Dummy admin credentials
 ADMIN_USERNAME = "admin"
