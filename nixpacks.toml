@@ -1,5 +1,15 @@
 [phases.setup]
-nixPkgs = ["cmake", "gcc", "python3", "python3Packages.pip", "python3Packages.setuptools", "python3Packages.wheel"]
+nixPkgs = [
+  "cmake",
+  "gcc",
+  "libffi",
+  "libglvnd",
+  "python3",
+  "zlib",
+  "openssl",
+  "pkg-config",
+  "make"
+]
 
 [phases.install]
 cmds = ["pip install --upgrade pip", "pip install -r requirements.txt"]
